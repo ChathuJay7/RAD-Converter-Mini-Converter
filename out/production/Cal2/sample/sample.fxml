@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="350.0" style="-fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-border-width: 2 2 2 2; -fx-background-color: linear-gradient(to top right, #0184d5, #1c2267);" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="56.0" layoutY="14.0" prefHeight="50.0" prefWidth="350.0" style="-fx-background-color: #1c2267;" text="CONVERTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.40046295523643494" green="0.14351852238178253" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.8518518805503845" green="0.9506173133850098" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <TextField fx:id="value" alignment="CENTER" layoutX="37.0" layoutY="99.0" prefHeight="60.0" prefWidth="300.0" promptText="Your Input Goes Here..." style="-fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-border-width: 3 3 3 3; -fx-background-color: radial-gradient(center 50% 50% , radius 100% , #ffebcd, #97b6e8);" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font></TextField>
+      <Button fx:id="meterBtn" alignment="CENTER" contentDisplay="CENTER" layoutY="179.0" mnemonicParsing="false" onAction="#KMtoM" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 2 0 1 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="METER" textFill="#0a0079" AnchorPane.bottomAnchor="300.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="67.0" radius="28.75" width="50.0">
+               <color>
+                  <Color red="0.054459065198898315" green="0.02923976629972458" blue="0.19736842811107635" />
+               </color>
+            </InnerShadow>
+         </effect></Button>
+      <Button fx:id="kilometerBtn" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#MtoKM" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="KiILOMETER" textAlignment="CENTER" textFill="#0a0079" AnchorPane.bottomAnchor="240.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="85.0" radius="33.25" width="50.0" />
+         </effect></Button>
+      <Button fx:id="inrBtn" alignment="CENTER" contentDisplay="CENTER" layoutY="360.0" mnemonicParsing="false" onAction="#INRtoR" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="INDIAN RUPEES" textFill="#0a0079" AnchorPane.bottomAnchor="180.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="85.0" radius="33.25" width="50.0" />
+         </effect></Button>
+      <Button fx:id="volumeBtn" layoutY="420.0" mnemonicParsing="false" onAction="#Volume" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="VOLUME" textFill="#0a0079" AnchorPane.bottomAnchor="120.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="85.0" radius="33.25" width="50.0" />
+         </effect>
+      </Button>
+      <Button fx:id="celciusBtn" layoutX="-10.0" layoutY="392.0" mnemonicParsing="false" onAction="#CeltoFah" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 1 0 1 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="CELSIUS" textFill="#0a0079" AnchorPane.bottomAnchor="60.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="85.0" radius="33.25" width="50.0" />
+         </effect></Button>
+      <Button fx:id="clearBtn" layoutY="540.0" mnemonicParsing="false" onAction="#clear" prefHeight="60.0" prefWidth="350.0" style="-fx-border-width: 1 0 2 0; -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-background-color: #79aef6;" text="RESET" textFill="#0a0079" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <effect>
+            <InnerShadow height="85.0" radius="33.25" width="50.0" />
+         </effect></Button>
+      <Label fx:id="answer" alignment="CENTER" contentDisplay="CENTER" layoutX="26.0" layoutY="171.0" prefHeight="60.0" prefWidth="300.0" style="-fx-background-color: radial-gradient(center 50% 50% , radius 100% , #ffebcd, #0b0d51); -fx-border-color: linear-gradient(from 13px 38px to 52px 52px, reflect,  #2163a3, #1c223d 100%); -fx-border-width: 3 3 3 3;" text="Answer Goes Here..." textFill="#100046" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="160.0">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font></Label>
+   </children>
+</AnchorPane>
